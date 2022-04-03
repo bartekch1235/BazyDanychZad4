@@ -9,6 +9,7 @@ namespace BazyDanychZad4.Pages
     {
         private readonly ILogger<IndexModel> _logger;
         private readonly PeopleContext _context;
+
         public IList<Person> People { get; set; }
         public IndexModel(ILogger<IndexModel> logger, PeopleContext context)
         {

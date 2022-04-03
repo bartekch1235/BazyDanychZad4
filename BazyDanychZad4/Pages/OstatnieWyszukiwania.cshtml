@@ -1,0 +1,20 @@
+﻿@page
+@model BazyDanychZad4.Pages.OstatnieWyszukiwaniaModel
+@{
+}
+@foreach (var item in Model.People)
+{
+<p>
+    @if(Model.counter<20)
+    {
+    @Html.DisplayFor(modelItem => item.Id )
+@Html.DisplayFor(modelItem => item.FirstName)
+@Html.DisplayFor(modelItem => item.LastName)
+@Html.DisplayFor(modelItem => item.Year)
+@Html.DisplayFor(modelItem => item.PostDate)
+@Html.DisplayFor(modelItem => item.Przestepca)
+
+Model.counter++;
+    }
+</p>
+}
